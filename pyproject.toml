@@ -1,0 +1,34 @@
+[tool.poetry]
+name = "dj-reprojek-skel"
+version = "0.1.0"
+description = "django skeleton base for reprojek"
+authors = ["reqishere <t.rex.fire@gmail.com>"]
+readme = "README.md"
+packages = [{include = "dj_reprojek_skel"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+django = "3.2.16"
+dj-database-url = "^1.2.0"
+django-ckeditor = "^6.5.1"
+django-crispy-forms = "^1.14.0"
+django-js-asset = "^2.0.0"
+django-phonenumber-field = "^7.0.2"
+gunicorn = "^20.1.0"
+whitenoise = "^6.3.0"
+phonenumbers = "^8.13.4"
+pillow = "^9.4.0"
+psycopg2 = "^2.9.5"
+crispy-bulma = "^0.8.3"
+django-environ = "^0.9.0"
+django-cors-headers = "^3.13.0"
+django-icons = "^22.1"
+django-import-export = "^3.0.2"
+django-mathfilters = "^1.0.0"
+easy-thumbnails = "^2.8.5"
+django-filer = "^2.2.4"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

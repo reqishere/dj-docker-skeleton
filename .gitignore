@@ -17,7 +17,7 @@ dist/
 myvenv/
 __pycache__/
 mysite_root/static/
-.env
+/app/*/.env
 media/
 *.sqlite3
 migrations/

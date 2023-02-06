@@ -1,0 +1,18 @@
+version: '3.7'
+
+services:
+  web:
+    container_name: dock-dj-py
+    env_file: ./docker.env
+    build:
+      context: ./
+      dockerfile: ./Dockerfile
+      args:
+        PROJECT_ON_IMAGE: /usr/src/app
+        PROJECT_ROOT: ./app
+    command: bash -c "/usr/src/app/run_migrate.sh && /usr/src/app/run_runserver.sh"
+    restart: "unless-stopped"
+    volumes:
+      - ./app:/usr/src/app
+    ports:
+      - 8000:8000

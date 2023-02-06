@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "django skeleton base for reprojek"
 authors = ["reqishere <t.rex.fire@gmail.com>"]
 readme = "README.md"
-packages = [{include = "dj_reprojek_skel"}]
+#packages = [{include = "dj_reprojek_skel"}]
 
 [tool.poetry.dependencies]
 python = "^3.8"

@@ -1,1 +1,1 @@
-poetry run ./app/manage.py runserver
+poetry run app\manage.py runserver
